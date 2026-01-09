@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Relay Messenger</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ШРИФТЫ -->
+    <style>
+        @font-face {
+            font-family: 'RelayText';
+            src: url('text.otf') format('opentype');
+        }
+
+        @font-face {
+            font-family: 'RelayMain';
+            src: url('main.otf') format('opentype');
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'RelayText', sans-serif;
+            background: #ffffff;
+            color: #000;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* ===== HEADER ===== */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 24px 60px;
+        }
+
+        .logo img {
+            height: 36px;
+            display: block;
+        }
+
+        nav {
+            display: flex;
+            gap: 28px;
+            font-size: 16px;
+        }
+
+        /* ===== SECTION TITLES ===== */
+        .section-title {
+            font-family: 'RelayMain', sans-serif;
+            font-size: 48px;
+            text-align: center;
+            margin: 80px 0 60px;
+            letter-spacing: 4px;
+        }
+
+        /* ===== WHY US ===== */
+        .features {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 80px;
+        }
+
+        .feature {
+            text-align: center;
+            max-width: 420px;
+        }
+
+        .feature img {
+            width: 160px;
+            margin-bottom: 24px;
+        }
+
+        .feature h3 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        .feature p {
+            font-size: 16px;
+            opacity: 0.8;
+        }
+
+        /* ===== DOWNLOAD ===== */
+        .download {
+            text-align: center;
+            margin-top: 120px;
+        }
+
+        .download p {
+            font-size: 18px;
+            margin-top: 24px;
+        }
+
+        .download a {
+            color: #0057ff;
+            font-weight: 600;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 120px;
+            font-size: 14px;
+            opacity: 0.6;
+        }
+
+        /* ===== RESPONSIVE ===== */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .section-title {
+                font-size: 36px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <img src="logo.svg" alt="Relay">
+        </div>
+        <nav>
+            <a href="about.html">О нас</a>
+            <a href="news.html">Новости</a>
+            <a href="soglasheniye.index">Пользовательское соглашение</a>
+            <a href="chavo.index">ЧАВО</a>
+        </nav>
+    </header>
+
+    <!-- WHY US -->
+    <h2 class="section-title">ПОЧЕМУ МЫ?</h2>
+
+    <div class="features">
+
+        <div class="feature">
+            <img src="sila.jpg" alt="Сильчак">
+            <h3>Сильчак</h3>
+            <p>Стабильные сервера</p>
+        </div>
+
+        <div class="feature">
+            <img src="crossplatform.jpg" alt="Кроссплатформище">
+            <h3>Кроссплатформище</h3>
+            <p>На любой девайс!</p>
+        </div>
+
+        <div class="feature">
+            <img src="vzlom.jpg" alt="Защита от взлома">
+            <h3>Защита от взлома</h3>
+            <p>С нами у вас надежный аккаунт!</p>
+        </div>
+
+        <div class="feature">
+            <img src="minimalizm.jpg" alt="Минимализм">
+            <h3>Минимализм</h3>
+            <p>Аккуратный, приятный дизайн</p>
+        </div>
+
+    </div>
+
+    <!-- DOWNLOAD -->
+    <div class="download">
+        <h2 class="section-title">ГДЕ СКАЧАТЬ?</h2>
+        <p>
+            На данный момент мессенджер в разработке, следите за
+            <a href="news.html">новостями</a> на сайте!
+        </p>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        2026 Relay Messenger — All Rights Reserved
+    </footer>
+
+</body>
+</html>
